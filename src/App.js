@@ -28,19 +28,84 @@
 
 
 
+// import Navbar from './Navbar';
+// import Home from './Home';
+
+// function App() {
+//   return (
+//     <div className="App">
+//       <Navbar />
+//         <div className="content">
+//           <Home />
+//         </div>
+//     </div>
+//   );
+// }
+
+// export default App;
+
+
+
+// routes
+// The React Router. To link different pages together
+// version installed 5 : npm install react-router-dom@5
+// import Navbar from './Navbar';
+// import Home from './Home';
+// import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+// import Create from './Create';
+
+// function App() {
+//   return (
+//     <Router>
+//       <div className="App">
+//         <Navbar />
+//         <div className="content">
+//           <Switch>
+//             <Route exact path="/">
+//               <Home />
+//             </Route>
+//             <Route path="/create">
+//               <Create />
+//             </Route>
+//           </Switch>
+//         </div>
+//       </div>
+//     </Router>
+//   );
+// }
+
+// export default App;
+
+
+
+// ROUTE PARAMETERS
 import Navbar from './Navbar';
 import Home from './Home';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
+import Create from './Create';
+import BlogDetails from './BlogDetails';
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
+    <Router>
+      <div className="App">
+        <Navbar />
         <div className="content">
-          <Home />
+          <Switch>
+            <Route exact path="/">
+              <Home />
+            </Route>
+            <Route path="/create">
+              <Create />
+            </Route>
+            <Route path="/blogs/:id">
+              <BlogDetails />
+            </Route>
+          </Switch>
         </div>
-    </div>
+      </div>
+    </Router>
   );
 }
 
 export default App;
-
