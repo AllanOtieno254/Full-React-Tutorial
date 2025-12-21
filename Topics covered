@@ -1,0 +1,30 @@
+Introduction
+Creating react application
+Components  & templates
+Dynamic values in templates
+Multiple components
+Adding styles using index.js
+Click events
+Using states(use state hooks)
+Intro to react dev tools
+Outputting list
+Props
+UseEffects hooks basics
+useEffects dependencies
+using json server
+fetching data with useEffects
+conditional loading message
+handling fetch error
+making a custom hook
+react router
+match routes
+router links
+useEffects cleanup
+route parameters
+reusing custom hooks
+controlled inputs
+submit events
+making a post request
+programmatic redirects
+deleting 
+pages and next steps
